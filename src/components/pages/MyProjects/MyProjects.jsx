@@ -1,10 +1,16 @@
+import { useContext } from "react";
+import { ThemeContext } from "../../Theme/ThemeContext";
+import { getText, getThemeClassNames } from "../Themes";
+
 const MyProjects = () => {
   const project = [1, 2];
 
+  const {isDarkMode} = useContext(ThemeContext) 
+
   return (
     <div className="mt-5">
-      <div className="bg-zinc-300 py-5 rounded-md">
-        <h1 className="text-xl text-zinc-700 font-semibold ml-5 p-5">
+      <div className={`${isDarkMode ? 'bg-gray-600' : 'bg-zinc-300'}  py-5 rounded-md`}>
+        <h1 className={`${getText(isDarkMode)} text-xl font-semibold ml-5 p-5`}>
           My Projects
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 mx-5 ">
@@ -12,8 +18,9 @@ const MyProjects = () => {
             return (
               <div
                 key={index}
-                className="bg-white px-5 py-5 rounded-md h-90 "
+                className={`${getThemeClassNames(isDarkMode)} px-5 py-5 rounded-md h-90 `}
               >
+                <a href="https://example.com/">
                 <div className="flex flex-col justify-center items-center">
                   <h1 className="text-zinc-600 font-semibold text-lg my-2">
                     Project Name
@@ -30,6 +37,7 @@ const MyProjects = () => {
                     Velit
                   </p>
                 </div>
+                </a>
               </div>
             );
           })}

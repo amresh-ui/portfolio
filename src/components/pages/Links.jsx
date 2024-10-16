@@ -1,6 +1,9 @@
     import { CgWebsite } from 'react-icons/cg';
 import { FaDev, FaGithub, FaLinkedin, FaMailBulk, FaMapMarkerAlt, FaMastodon, FaMedium} from 'react-icons/fa';
 import { FaTwitter,  } from 'react-icons/fa6';
+import { getComponent } from './Themes';
+import { useContext } from 'react';
+import { ThemeContext } from '../Theme/ThemeContext';
     const Links = () => {
 
     const arrayData = [
@@ -51,14 +54,18 @@ import { FaTwitter,  } from 'react-icons/fa6';
       },
     ]
 
+    const {isDarkMode} = useContext(ThemeContext)
+
       return (
         <div className="mt-5">
-          <div className="bg-white h-auto rounded-md p-4">
+          <div className={`
+            ${getComponent(isDarkMode)} 
+              h-auto rounded-md p-4`}>
             {arrayData.map((item, index) => (
               <div key={index} className='flex justify-between mt-2' >
-                <div className='flex gap-2 '>
-                  <p className='mt-3 h-10 text-zinc-500'>{item.icons}</p>
-                  <p className='mt-1  text-zinc-500'>{item.title}</p>
+                <div className={`${isDarkMode ? 'text-zinc-300' : 'text-zinc-500'} flex gap-2 `}>
+                  <p className='mt-3 h-10 '>{item.icons}</p>
+                  <p className='mt-1 '>{item.title}</p>
                   
                 </div>
                 <div>
