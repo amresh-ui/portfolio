@@ -20,7 +20,7 @@ const Education = () => {
 const {isDarkMode} =  useContext(ThemeContext);
   return (
     <div className="mt-5">
-      <div className={` ${getComponent(isDarkMode)} h-52 p-4 rounded-md`}>
+      <div className={` ${getComponent(isDarkMode)} h-52 p-4 rounded-md shadow-lg shadow-black`}>
         <div className="ml-3">
           <h1 className={`${isDarkMode ? 'text-zinc-300' : 'text-zinc-600'} text-xl  `}>Education</h1>
 

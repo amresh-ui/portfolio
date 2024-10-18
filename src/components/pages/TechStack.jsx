@@ -24,7 +24,7 @@ const TechStack = () => {
 
   return (
     <div className="mt-5">
-      <div className={` ${getComponent(isDarkMode)} h-48 rounded-md mx-auto p-4`}>
+      <div className={` ${getComponent(isDarkMode)} h-48 rounded-md mx-auto p-4 shadow-lg shadow-black`}>
         <h1 className={`${isDarkMode ?'text-zinc-300': 'text-zinc-500'} font-semibold text-xl`}>Tech Stack</h1>
         <div className="mt-4 flex flex-wrap gap-1  justify-center items-center">
           {techStack.map((item, index) => (

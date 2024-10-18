@@ -8,7 +8,7 @@ const ProfileCard = () => {
 
   return (
     <div>
-      <div className={`${getComponent(isDarkMode)}w-full h-auto mt-5 rounded-md shadow-lg`}>
+      <div className={`${getComponent(isDarkMode)}w-full h-auto mt-5 rounded-md shadow-lg shadow-black`}>
         <div className="flex flex-col justify-center items-center p-6">
           <div className={`border-4 rounded-full ${isDarkMode ? 'border-blue-600' : 'border-black' } p-1`}>
             <img
@@ -27,7 +27,7 @@ const ProfileCard = () => {
             <a 
               href="/hello.pdf"
             >
-              <button className="py-2 px-3 rounded-sm border border-slate-400 text-slate-400 text-sm">
+              <button className="py-2 px-3 rounded-sm border border-slate-400 text-slate-400 text-sm shadow-md shadow-slate-700">
                 Download Resume
               </button>
             </a>

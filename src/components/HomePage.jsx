@@ -45,10 +45,10 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="mt-5  flex justify-center items-center">
+        <div className="mt-5  flex justify-center items-center ">
         <div className="mb-5">
           <a href="https://github.com/amresh-ui/portfolio">
-          <h1 className={`px-3 py-3 ${isDarkMode === true ? 'bg-gray-600 text-zinc-400' : 'bg-zinc-300'}  rounded-md `}>Made with GitProfile and ❤️</h1>
+          <h1 className={`px-3 py-3 shadow-lg shadow-black ${isDarkMode === true ? 'bg-gray-600 text-zinc-400' : 'bg-zinc-300'}  rounded-md `}>Made with GitProfile and ❤️</h1>
           </a>
         </div>
       </div>

@@ -21,7 +21,7 @@ const {isDarkMode} =  useContext(ThemeContext);
 
   return (
     <div className="mt-5">
-      <div className={` ${getComponent(isDarkMode)}bg-white h-56 p-4 rounded-md shadow-lg`}>
+      <div className={` ${getComponent(isDarkMode)}bg-white h-56 p-4 rounded-md shadow-lg shadow-black`}>
         <div className="ml-1">
         <div>
           <h1 className={`text-xl ml-2 font-semibold ${isDarkMode ? 'text-zinc-300' : 'text-zinc-500'} `}>Experience</h1>

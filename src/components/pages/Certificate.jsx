@@ -6,7 +6,7 @@ const Certificate = () => {
   const {isDarkMode} = useContext(ThemeContext)
   return (
     <div className='mt-5'>
-      <div className={`${getComponent(isDarkMode)} h-36 p-4`}>
+      <div className={`${getComponent(isDarkMode)} h-36 p-4 shadow-lg shadow-black`}>
         <div className="ml-3">
           <h1 className={`${isDarkMode ? 'text-zinc-300' : 'text-zinc-500'} text-xl font-semibold`}>Certification</h1>
           <div className="ml-2 border-l ">

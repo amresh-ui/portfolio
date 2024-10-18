@@ -60,7 +60,7 @@ import { ThemeContext } from '../Theme/ThemeContext';
         <div className="mt-5">
           <div className={`
             ${getComponent(isDarkMode)} 
-              h-auto rounded-md p-4`}>
+              h-auto rounded-md p-4 shadow-lg shadow-black`}>
             {arrayData.map((item, index) => (
               <div key={index} className='flex justify-between mt-2' >
                 <div className={`${isDarkMode ? 'text-zinc-300' : 'text-zinc-500'} flex gap-2 `}>

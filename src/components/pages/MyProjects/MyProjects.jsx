@@ -9,7 +9,7 @@ const MyProjects = () => {
 
   return (
     <div className="mt-5">
-      <div className={`${isDarkMode ? 'bg-gray-600' : 'bg-zinc-300'}  py-5 rounded-md`}>
+      <div className={`${isDarkMode ? 'bg-gray-600' : 'bg-zinc-300'}  py-5 rounded-md shadow-lg shadow-black`}>
         <h1 className={`${getText(isDarkMode)} text-xl font-semibold ml-5 p-5`}>
           My Projects
         </h1>
@@ -18,7 +18,7 @@ const MyProjects = () => {
             return (
               <div
                 key={index}
-                className={`${getThemeClassNames(isDarkMode)} px-5 py-5 rounded-md h-90 `}
+                className={`${getThemeClassNames(isDarkMode)} px-5 py-5 rounded-md h-90 shadow-md shadow-slate-700 `}
               >
                 <a href="https://example.com/">
                 <div className="flex flex-col justify-center items-center">

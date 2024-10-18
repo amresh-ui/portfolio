@@ -11,12 +11,12 @@ const Articles = () => {
 
   return (
     <div className="mt-5">
-      <div className={`${isDarkMode ? 'bg-gray-600' : 'bg-zinc-300' } h-full p-5 rounded-md`}>
+      <div className={`${isDarkMode ? 'bg-gray-600' : 'bg-zinc-300' } h-full p-5 rounded-md shadow-lg shadow-black`}>
         <h1 className={`${getText(isDarkMode)} p-5  text-xl font-semibold`}>My Articles</h1>
 
         {articles.map((item, index) => {
           return (
-            <div key={index} className={`${getThemeClassNames(isDarkMode)} w-full p-4 mb-4`}> 
+            <div key={index} className={`${getThemeClassNames(isDarkMode)} w-full p-4 mb-4 shadow-md shadow-gray-700`}> 
             <a href="https://dev.to/arifszn/prevent-api-overload-a-comprehensive-guide-to-rate-limiting-with-bottleneck-c2p">
               <div className="gap-5">
                 <div className="flex">
